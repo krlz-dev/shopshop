@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://g2kiv75rh7se"]
+
+[ext_resource type="Texture2D" uid="uid://bhi1sqdghp6vp" path="res://assets/Player.svg" id="1_p2vsv"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_km04w"]
+radius = 21.0
+height = 102.0
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-0.0206451, -42.0073)
+rotation = 1.5708
+texture = ExtResource("1_p2vsv")
+offset = Vector2(0.507324, -0.0206452)
+hframes = 7
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -41.5)
+shape = SubResource("CapsuleShape2D_km04w")
